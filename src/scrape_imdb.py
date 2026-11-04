@@ -1,22 +1,3 @@
-"""
-IMDb Top 250 scraper
---------------------
-Reconstructed from the code screenshots provided by the project author.
-
-Requirements:
-    pip install -r requirements.txt
-
-Run:
-    python src/scrape_imdb.py
-
-Output:
-    data/IMDB_DATA_scraped.csv
-
-Note:
-    IMDb may change its page structure or restrict automated access.
-    Use this script respectfully and check IMDb's terms and robots policies.
-"""
-
 from __future__ import annotations
 
 import re
