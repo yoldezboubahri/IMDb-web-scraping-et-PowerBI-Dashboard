@@ -14,14 +14,11 @@ Interactive dashboard for exploring movie data and cinema trends with **Power BI
 
 The dashboard uses visualizations and filters to make it easier to explore movie characteristics and trends.
 
-## Dashboard preview
+## Dashboard Preview
 
-Add screenshots of the report pages to the `screenshots/` folder, then update the image paths below.
+![IMDb Power BI Dashboard](screenshots/imdb_dashboard.png)
 
-<!-- Uncomment and update when screenshots are added:
-![Dashboard overview](screenshots/dashboard_overview.png)
-![Dashboard details](screenshots/dashboard_details.png)
--->
+*Tableau de bord Power BI « Le Monde en Films » : exploration interactive des 250 meilleurs films IMDb, analyse des notes, des votes et des caractéristiques des films.*
 
 ## Tools and technologies
 
