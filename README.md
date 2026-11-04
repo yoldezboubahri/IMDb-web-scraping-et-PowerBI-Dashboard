@@ -1,4 +1,4 @@
-# 🎬 Le Monde en Films — IMDb Power BI Dashboard
+# 🎬 Le Monde en Films — IMDb web scraping + Power BI Dashboard
 
 Interactive Power BI dashboard for exploring movie data and cinema trends.
 
