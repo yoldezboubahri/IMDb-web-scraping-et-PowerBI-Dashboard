@@ -1,15 +1,40 @@
 # Data
 
-This folder is reserved for dataset documentation and, if redistribution is permitted, small sample data.
+This folder contains the dataset used to build the **"Le Monde en Films"** interactive Power BI dashboard.
 
-## Data provenance
+## Dataset: `IMDB_DATA.csv`
 
-- **Source:** IMDb-related data collected for the project.
-- **Collection method:** Web scraping (as described in the project).
-- **Preparation:** Cleaning, structuring and consistency checks before analysis.
+The dataset contains information about **250 movies** from IMDb's Top 250 ranking.
 
-## Important
+### Data source and collection
 
-The original dataset and scraping scripts are not included in this repository at this stage. Add the exact source pages, collection date, fields collected and any applicable usage/licensing information before publishing data.
+- **Source:** [IMDb – Top 250 Movies](https://www.imdb.com/chart/top/)
+- **Collection method:** Automated web scraping using Selenium and BeautifulSoup.
+- **Data processing:** Extraction, cleaning, structuring and preparation using Python and Pandas.
+- **Storage format:** CSV (semicolon-separated values, UTF-8 encoding).
 
-Do not upload personal data, credentials, API keys, or data whose terms prohibit redistribution.
+### Data fields
+
+The dataset includes movie-related information such as:
+
+- Movie ranking and title
+- Release year
+- Runtime / duration
+- Age classification
+- IMDb rating
+- Number of votes
+- Country and language information
+
+### Data usage
+
+The dataset is used for:
+- Exploratory Data Analysis (EDA).
+- Analysis of movie ratings and characteristics.
+- Identification of cinema trends and patterns.
+- Interactive visualizations and KPI development in Power BI.
+
+### Notes
+
+The dataset is provided for educational and portfolio purposes. IMDb is the original source of the movie information.
+
+Please respect IMDb's terms of use and applicable data redistribution restrictions.
