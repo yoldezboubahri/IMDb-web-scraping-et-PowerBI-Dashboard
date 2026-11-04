@@ -1,0 +1,7 @@
+# Python environment for the data collection / preparation workflow.
+# Keep only packages imported by your actual Python scripts.
+requests
+beautifulsoup4
+lxml
+pandas
+numpy
