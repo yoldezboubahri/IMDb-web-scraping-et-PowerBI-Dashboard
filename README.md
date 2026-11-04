@@ -1,19 +1,19 @@
 # 🎬 Le Monde en Films — IMDb Power BI Dashboard
 
-Interactive dashboard for exploring movie data and cinema trends with **Power BI**.
+Interactive Power BI dashboard for exploring movie data and cinema trends.
 
 ## Project overview
 
-**Le Monde en Films** is a data analytics and visualization project built around IMDb-related movie data. It covers the main stages of an analytics workflow:
+This project combines web scraping, data preparation and interactive visualization to transform IMDb Top 250 movie information into an analytical dashboard.
 
-- Data collection through web scraping
-- Data cleaning, preparation and structuring
-- Exploratory data analysis
-- Creation of analytical indicators
-- Interactive visualization in Power BI
+## Workflow
 
-The dashboard uses visualizations and filters to make it easier to explore movie characteristics and trends.
+1. **Collection:** Selenium automates the browser and loads the IMDb Top 250 page.
+2. **Extraction:** BeautifulSoup parses movie titles, rankings, years, runtimes, classifications and ratings from the rendered HTML.
+3. **Preparation:** Pandas structures the extracted information and derives runtime in minutes.
+4. **Visualization:** Power BI is used to explore movie characteristics and cinema trends through interactive visuals and filters.
 
+<<<<<<< HEAD
 ## Dashboard Preview
 
 ![IMDb Power BI Dashboard](screenshots/imdb_dashboard.png)
@@ -27,6 +27,15 @@ The dashboard uses visualizations and filters to make it easier to explore movie
 - **Pandas** — data manipulation (if used in the collection/preparation scripts)
 
 See [`requirements.txt`](requirements.txt) for the Python environment dependencies. Remove packages that are not used by your actual scripts.
+=======
+## Technologies
+
+- Python
+- Selenium
+- BeautifulSoup
+- Pandas
+- Power BI
+>>>>>>> 6884c20 (Add Power BI dashboard screenshots)
 
 ## Repository structure
 
@@ -35,65 +44,65 @@ IMDb-PowerBI-Dashboard/
 ├── dashboard/
 │   └── Le_Monde_en_Films.pbix
 ├── data/
+│   ├── IMDB_DATA.csv
 │   └── README.md
 ├── screenshots/
-│   └── (add dashboard screenshots here)
-├── .gitignore
+├── src/
+│   └── scrape_imdb.py
 ├── .gitattributes
-├── LICENSE
+├── .gitignore
 ├── README.md
 └── requirements.txt
 ```
 
-## Getting started
+## Run the scraper
 
-### 1. View the dashboard
-
-1. Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
-2. Clone or download this repository.
-3. Open `dashboard/Le_Monde_en_Films.pbix` in Power BI Desktop.
-4. Explore the report pages, filters and visualizations.
-
-### 2. Set up the Python environment
-
-Python dependencies are listed in `requirements.txt`.
+Requirements: Python and Google Chrome installed.
 
 ```bash
 python -m venv .venv
 ```
 
-Activate the environment:
+Windows PowerShell:
 
-**Windows**
-```bash
-.venv\Scripts\activate
-```
-
-**macOS / Linux**
-```bash
-source .venv/bin/activate
+```powershell
+.venv\Scripts\Activate.ps1
 ```
 
 Install dependencies:
 
 ```bash
-python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-> The repository currently contains the Power BI report, not the original scraping scripts. The requirements file is a starting environment for the data collection/preparation workflow; keep only the packages actually used by your scripts.
+Run:
 
-## Data and reproducibility
+```bash
+python src/scrape_imdb.py
+```
 
-The source dataset and scraping scripts are not included in this repository. See [`data/README.md`](data/README.md) for notes on data provenance, usage and future additions.
+The script saves the extracted records to `data/IMDB_DATA_scraped.csv`.
 
-If you add scripts later, place them in a dedicated folder (for example, `src/`) and document the exact execution steps here. Do not commit API keys, credentials, personal data or datasets you are not authorized to redistribute.
+Selenium 4 uses Selenium Manager to manage the Chrome driver. If IMDb changes its HTML structure, the CSS selectors in the script may need to be updated.
+
+## Dashboard
+
+Open `dashboard/Le_Monde_en_Films.pbix` with Power BI Desktop.
+
+Add screenshots of the report pages to `screenshots/` and embed them here, for example:
+
+```markdown
+![Dashboard overview](screenshots/dashboard_overview.png)
+```
+
+## Data notes
+
+The supplied `data/IMDB_DATA.csv` contains 250 records and additional `Pays` and `Langue` columns. These enrichment fields are present in the supplied dataset, but their collection logic was not visible in the screenshots used to reconstruct the scraper.
+
+Please respect IMDb's terms of use and applicable data-use restrictions. Do not overload the website with automated requests.
 
 ## Author
 
 **Yoldez Boubahri**  
-Engineering student in Statistics and Information Analysis  
-ESSAI — University of Carthage
-
-- [GitHub](https://github.com/yoldezboubahri)
-- [LinkedIn](https://www.linkedin.com/in/yoldez-boubahri-731b13326/)
+ESSAI — University of Carthage  
+[GitHub](https://github.com/yoldezboubahri) · [LinkedIn](https://www.linkedin.com/in/yoldez-boubahri-731b13326/)
