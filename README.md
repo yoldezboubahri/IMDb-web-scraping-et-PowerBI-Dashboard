@@ -13,7 +13,7 @@ This project combines web scraping, data preparation and interactive visualizati
 3. **Preparation:** Pandas structures the extracted information and derives runtime in minutes.
 4. **Visualization:** Power BI is used to explore movie characteristics and cinema trends through interactive visuals and filters.
 
-<<<<<<< HEAD
+
 ## Dashboard Preview
 
 ![IMDb Power BI Dashboard](screenshots/imdb_dashboard.png)
@@ -35,7 +35,7 @@ See [`requirements.txt`](requirements.txt) for the Python environment dependenci
 - BeautifulSoup
 - Pandas
 - Power BI
->>>>>>> 6884c20 (Add Power BI dashboard screenshots)
+
 
 ## Repository structure
 
