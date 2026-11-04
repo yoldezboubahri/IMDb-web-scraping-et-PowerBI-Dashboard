@@ -1,44 +1,24 @@
 # Python
 __pycache__/
 *.py[cod]
-*$py.class
-.Python
 .venv/
 venv/
-env/
-ENV/
-.ipynb_checkpoints/
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-
-# Environment variables and secrets
 .env
-.env.*
-!.env.example
-*.pem
-*.key
+.ipynb_checkpoints/
 
-# IDE and operating system
+# IDE / OS
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
-desktop.ini
 
 # Logs and temporary files
 *.log
 *.tmp
 *.bak
-*.swp
-~$*
 
-# Data files: avoid committing large or restricted source datasets by default
-# Uncomment if you want Git to ignore common data exports:
-# data/*.csv
-# data/*.xlsx
-# data/*.json
-
-# Power BI temporary / backup files
+# Power BI temporary files
 *.pbix.autosave
-*.pbit
+
+# Scraped outputs: keep the provided project dataset, ignore new raw exports if desired
+# data/IMDB_DATA_scraped.csv

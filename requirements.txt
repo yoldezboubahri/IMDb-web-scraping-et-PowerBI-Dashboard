@@ -1,7 +1,4 @@
-# Python environment for the data collection / preparation workflow.
-# Keep only packages imported by your actual Python scripts.
-requests
-beautifulsoup4
-lxml
-pandas
-numpy
+selenium>=4.18
+beautifulsoup4>=4.12
+pandas>=2.0
+lxml>=5.0
